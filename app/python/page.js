@@ -1,14 +1,13 @@
 "use client";
 import React, { useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'; // Versi 2 menggunakan /24/solid
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 
 const TutorialPage = () => {
     const [openSubmenu, setOpenSubmenu] = useState(null);
     const handleBack = () => {
-        window.history.back(); // Menggunakan history API untuk kembali ke halaman sebelumnya
+        window.history.back();
     };
 
-    // Fungsi untuk toggle submenu
     const toggleSubmenu = (menu) => {
         setOpenSubmenu(openSubmenu === menu ? null : menu);
     };
@@ -41,9 +40,9 @@ const TutorialPage = () => {
                         >
                             <span className="mr-[70px]">Python Syntax</span>
                             {openSubmenu === 'pythonSyntax' ? (
-                                <ChevronUpIcon className="w-5 h-5 text-blue-600 mt-1" /> // Ikon saat submenu terbuka
+                                <ChevronUpIcon className="w-5 h-5 text-blue-600 mt-1" />
                             ) : (
-                                <ChevronDownIcon className="w-5 h-5 text-blue-600 mt-1" /> // Ikon saat submenu tertutup
+                                <ChevronDownIcon className="w-5 h-5 text-blue-600 mt-1" />
                             )}
                         </div>
                         {openSubmenu === 'pythonSyntax' && (
@@ -69,7 +68,6 @@ const TutorialPage = () => {
                     </li>
                 </ul>
             </aside>
-            {/* Konten Tutorial */}
             <div className="flex-1 p-6">
                 <div className='w-full p-3'>
                     <h1 className="text-4xl font-bold mb-4">Tutorial Python</h1>
@@ -95,23 +93,23 @@ const TutorialPage = () => {
                         Banyak orang menggunakan Pc dan Mac untuk menginstall python.
                     </p>
                     <p className="mt-4">
-                        Untuk Mengecek jika kamu memiliki instalasi python di windows, cari di bar pertama python atau menjalankan di dalam command prompt ( cmd.exe ):
+                        Untuk Mengecek jika kamu memiliki instalasi python di windows, cari di bar pertama python atau menjalankan di dalam command prompt (cmd.exe):
                     </p>
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
-                            <p className='bg-black p-2 text-white rounded-lg'> C:\Users\Your Name\ $python --version </p>
+                            <p className='bg-black p-2 text-white rounded-lg'>C:\Users\Your Name\ $python --version</p>
                         </code>
                     </pre>
                     <p className='mt-4'>
-                        Untuk Mengecek jika kamu memiliki instalasi python untuk linux atau macm ketika di dalam linux buka ( cmd ) atau mac buka terminal dan ketik:
+                        Untuk Mengecek jika kamu memiliki instalasi python untuk linux atau mac, ketika di dalam linux buka (cmd) atau mac buka terminal dan ketik:
                     </p>
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
-                            <p className='bg-black p-2 text-white rounded-lg'> python --version </p>
+                            <p className='bg-black p-2 text-white rounded-lg'>python --version</p>
                         </code>
                     </pre>
                     <p className="mt-4">
-                        Jika kamu menemukan bahwa kamu tidak memiliki instalasi python di computer, kamu bisa download secara gratis dari mengikuti web <a href="https://www.python.org/downloads/" className="text-blue-500">ini</a>.
+                        Jika kamu menemukan bahwa kamu tidak memiliki instalasi python di komputer, kamu bisa download secara gratis dari mengikuti web <a href="https://www.python.org/downloads/" className="text-blue-500">ini</a>.
                     </p>
                     <div className='border-b-2 border-gray-200 mt-7'></div>
                 </div>
@@ -121,28 +119,28 @@ const TutorialPage = () => {
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
                             <button className='bg-gray-500 p-2 rounded-t text-white'>helloworld.py</button>
-                            <p className='bg-white p-4'> print("Hello, World!")</p>
+                            <p className='bg-white p-4'>print(&quot;Hello, World!&quot;)</p>
                         </code>
                     </pre>
-                    <p className='mt-4'> Mudah nya. simpan file kamu, buka cmd, pindahkan directory kamu ke cmd, dan jalankan :</p>
+                    <p className='mt-4'> Mudah nya. simpan file kamu, buka cmd, pindahkan directory kamu ke cmd, dan jalankan:</p>
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
-                            <p className='bg-black p-2 text-white rounded-lg'> C:\Users\Your Name\ $python helloworld.py </p>
+                            <p className='bg-black p-2 text-white rounded-lg'>C:\Users\Your Name\ $python helloworld.py</p>
                         </code>
                     </pre>
                     <p className="mt-4">
-                        Pada contoh di atas, program akan mencetak "Hello, World!" ke layar.
+                        Pada contoh di atas, program akan mencetak &quot;Hello, World!&quot; ke layar.
                     </p>
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
-                            <p className='bg-black p-2 text-white rounded-lg'> Hello, World! </p>
+                            <p className='bg-black p-2 text-white rounded-lg'>Hello, World!</p>
                         </code>
                     </pre>
                     <p className='mt-4'>Selamat!!, kamu berhasil membuat aplikasi program python pertama kamu.</p>
                     <div className='border-b-2 border-gray-200 mt-7'></div>
                 </div>
                 <div className='w-full p-4 mt-4'>
-                    <h2 className="text-3xl font-bold mb-2">Coding School' Python Editor</h2>
+                    <h2 className="text-3xl font-bold mb-2">Coding School&apos; Python Editor</h2>
                 </div>
             </div>
 
