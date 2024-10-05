@@ -1,6 +1,7 @@
 "use client"; // Pastikan ini ada di bagian atas file
 import React from 'react';
 import Link from 'next/link'; // Import Link dari Next.js
+import Image from 'next/image'; // Import Image dari Next.js
 import { FaBriefcase, FaInfoCircle, FaKey } from 'react-icons/fa';
 
 const Content = () => {
@@ -23,10 +24,12 @@ const Content = () => {
         <div className="flex flex-wrap gap-4 max-w-full min-h-full">
             {data.map((item, index) => (
                 <Link href={item.url} key={index} className="relative flex w-[350px] h-[150px] bg-white cursor-pointer">
-                    <img
+                    <Image
                         src={item.imgSrc}
                         alt={item.name}
-                        className="w-[130px] h-[150px] object-cover"
+                        width={130}
+                        height={150}
+                        className="object-cover"
                     />
                     <div className="ml-4 flex flex-col space-y-2">
                         <div className="flex items-center">

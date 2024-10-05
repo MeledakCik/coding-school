@@ -119,7 +119,7 @@ const TutorialPage = () => {
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
                             <button className='bg-gray-500 p-2 rounded-t text-white'>helloworld.py</button>
-                            <p className='bg-white p-4'>print(&quot;Hello, World!&quot;)</p>
+                            <p className='bg-white p-4'>{`print(Hello, World!)`}</p>
                         </code>
                     </pre>
                     <p className='mt-4'> Mudah nya. simpan file kamu, buka cmd, pindahkan directory kamu ke cmd, dan jalankan:</p>
@@ -129,7 +129,7 @@ const TutorialPage = () => {
                         </code>
                     </pre>
                     <p className="mt-4">
-                        Pada contoh di atas, program akan mencetak &quot;Hello, World!&quot; ke layar.
+                        Pada contoh di atas, program akan mencetak `Hello, World!` ke layar.
                     </p>
                     <pre className="bg-gray-200 p-4 mt-4 rounded-lg">
                         <code>
